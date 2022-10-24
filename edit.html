@@ -6,6 +6,11 @@
 <!-- Compiled and minified CSS -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<script>
+	document.addEventListener('DOMContentLoaded', function() {
+		M.FormSelect.init(document.querySelectorAll('select'), {});
+	});
+</script>
 </head>
 <nav class="blue lighten-1" role="navigation">
 	<div class="nav-wrapper container">
@@ -33,7 +38,7 @@
 				<div class="row">
 					 <div class="input-field col s4">
 						
-  <select class="browser-default">
+  <select>
     <option value="" disabled selected>Choose your task</option>
     <option value="1">Going to shop</option>
     <option value="2">Taking out a trash</option>
@@ -49,7 +54,7 @@
 					</div>
 					<div class="input-field col s4">
 						
-  <select class="browser-default">
+  <select>
     <option value="" disabled selected>Choose participant</option>
     <option value="1">Anna</option>
     <option value="2">Elena</option>
@@ -62,7 +67,9 @@
 		</div>
 		<div class="row">
 			<div class="col s12 input-field center-align">
-				<a class="btn waves-effect waves-light red" href="list.html"><i class="material-icons left">list</i>back to list</a> <a class="btn waves-effect waves-light green"
+				<a class="btn waves-effect waves-light red" href="list.html">
+					<i class="material-icons left">list</i>back to list</a>
+				<a class="btn waves-effect waves-light green"
 					href="#"><i class="material-icons left">save</i>Save</a>
 			</div>
 		</div>
